@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hasil Statistik</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Hasil Perhitungan Statistik</h1>
+    <ul>
+        <li>Rata-rata: {{ hasil.rata_rata }}</li>
+        <li>Median: {{ hasil.median }}</li>
+        <li>Modus: {{ hasil.modus }}</li>
+        <li>Simpangan Baku: {{ hasil.simpangan_baku }}</li>
+    </ul>
+    <a href="/">Kembali</a>
+</body>
+</html>
